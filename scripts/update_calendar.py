@@ -26,7 +26,7 @@ def download_and_filter_calendar():
                 new_lines.append(line)
             continue
         
-        if inside_event and "Location: PRERECORDED" in line:
+        if inside_event and "LOCATION:PRERECORDED" in line:
             skip_event = True
 
         if not skip_event:
