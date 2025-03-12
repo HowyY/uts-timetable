@@ -41,6 +41,8 @@ jobs:
           else
             echo "Changes detected."
             echo "CHANGES=true" >> $GITHUB_ENV
+          fi
+
           
       - name: Commit and Push Changes
         if: env.CHANGES == 'true'
